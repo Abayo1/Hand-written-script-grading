@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Grading Demo</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>AI-Powered Handwritten Answer Grading</h1>
+    <form action="/process" enctype="multipart/form-data" method="post">
+        <label for="teacher_answer">Teacher's Answer:</label>
+        <textarea id="teacher_answer" name="teacher_answer" rows="4" required></textarea>
+        
+        <label for="file">Upload Student's Handwritten Answer:</label>
+        <input type="file" id="file" name="file" accept="image/*" required>
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+
